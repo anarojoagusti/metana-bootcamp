@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bank Account Management</title>
+</head>
+<body>
+    //----------- Main containner------------
+    <div class="container">
+        <h1>Bank Account Management</h1>
+
+        //------------ Subsection containers - Options -------------
+        //------------ Create Account -------------------------------
+        <div class="form-group">
+            <h2>Create Account </h2>
+            <input type="text" id="accountNumber" placeholder="Account Number" value="">
+            <input type="text" id="initialDeposit" placeholder="Initial Deposit" value="">
+            <button onclick="createAccount()"> Create Account</button>
+        </div>
+        //------------ Create Account -------------------------------
+
+        //------------ Deposit Money -------------------------------
+        <div class="form-group">
+            <h2>Deposit Money </h2>
+            <input type="text" id="accountNumberToDeposit" placeholder="Account Number to Deposit Money" value="">
+            <input type="text" id="depositAmount" placeholder="Deposit Amount" value="">
+            <button onclick="depositMoney()">Deposit</button>
+        </div>
+        //------------ Deposit Money -------------------------------
+
+        //------------ Withdraw Money -------------------------------
+        <div class="form-group">
+            <h2> Withdraw Money </h2>
+            <input type="text" id="accountNumberToWithdraw" placeholder="Account Number to Withdraw Money" value="">
+            <input type="text" id="withdrawAmount" placeholder="Withdraw Amount" value="">
+            <button onclick="withdrawMoney()">Withdraw</button>
+        </div>
+        //------------ Withdraw Money -------------------------------
+
+        //------------ Check Balance -------------------------------
+        <div class="form-group">
+            <h2> Check Balance </h2>
+            <input type="text" id="accountNumberToCheck" placeholder="Account Number to Check Balance" value="">
+            <button onclick="checkBalance()">Check Balance</button>
+        </div>
+        //------------ Check Balance -------------------------------
+
+    </div>
+
+
+
+
+
+    <script src="bank_account.js"></script>
+</body>
+</html>
