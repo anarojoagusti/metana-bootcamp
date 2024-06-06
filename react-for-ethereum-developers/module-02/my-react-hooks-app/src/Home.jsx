@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import BlogList from './BlogList';
 
 function Home(){
 
@@ -29,10 +30,16 @@ function Home(){
         console.log('use effect ran');
     });
 
+    //Props
+    const[blogs, setBlogs] = useState([
+        {title: 'My new website', body: 'lorem ipsum...', author: 'ana', id: 1},
+        {title: 'Welcome party!', body: 'lorem ipsum...', author: 'mario', id: 2},
+        {title: 'WEB DEV TOP TIPS', body: 'lorem ipsum...', author: 'luigi', id: 3}
+    ]);
+
     return(
         <div className="home">
-            <h2>Homepage</h2>
-            <p>{name} is {age} years old</p>
+            <BlogList blogs={blogs} title="All Blogs!"/>
             <button onClick={handleClick}>Click me</button>
         </div>
     );
